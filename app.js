@@ -13,6 +13,7 @@ app.use("/posts", postsRoute);
 mongoose.connect(process.env.DB_CONNECTION, () => {
   console.log("conected to DB");
 });
-// start
+  // const port = process.env.PORT || 3001
+  // start
 
-app.listen(3001);
+app.listen(process.env.PORT || 3001);
